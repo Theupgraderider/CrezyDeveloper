@@ -45,13 +45,14 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                  ],[
-                    InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-                    InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about'),
-                  ],[
-                    InlineKeyboardButton('🔥 JOIИ UᎮDΛTΞS CHΛИИΞL 🔥', url="https://t.me/movies_island8")
-                  ]]
+                    InlineKeyboardButton('🍟 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs 🍟', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                ],[
+                    InlineKeyboardButton('🌼 ᴜᴘᴅᴀᴛᴇs 🌼', url=f'https://t.me/Mhubnetwork'),
+                    InlineKeyboardButton('♛ ʙᴏᴛ ᴏᴡɴᴇʀ ♛', url=f'https://t.me/Ashish_xlr8'),
+                ],[
+                    InlineKeyboardButton('🍄 ʜᴇʟᴘ 🍄', callback_data='help'),
+                    InlineKeyboardButton('🔰 ᴀʙᴏᴜᴛ 🔰', callback_data='about'),
+              ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -92,13 +93,14 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                  ],[
-                    InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-                    InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about'),
-                  ],[
-                    InlineKeyboardButton('🔥 JOIИ UᎮDΛTΞS CHΛИИΞL 🔥', url="https://t.me/movies_island8")
-                  ]]
+                    InlineKeyboardButton('🍟 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs 🍟', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                ],[
+                    InlineKeyboardButton('🌼 ᴜᴘᴅᴀᴛᴇs 🌼', url=f'https://t.me/Mhubnetwork'),
+                    InlineKeyboardButton('♛ ʙᴏᴛ ᴏᴡɴᴇʀ ♛', url=f'https://t.me/Ashish_xlr8'),
+                ],[
+                    InlineKeyboardButton('🍄 ʜᴇʟᴘ 🍄', callback_data='help'),
+                    InlineKeyboardButton('🔰 ᴀʙᴏᴜᴛ 🔰', callback_data='about'),
+              ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
