@@ -21,7 +21,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "6270831968:AAGY8PTyVTYHM0UBHlj9GnwZZu6dMYd
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/4b2852ca00781d2e454e9.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/a99344840c64dc5466007.jpg https://telegra.ph/file/f474410a48bacfd61e984.jpg https://telegra.ph/file/3b3658a60533681ab2d97.jpg https://telegra.ph/file/ce8dea8f8e4cede0718ad.jpg https://telegra.ph/file/9a19e21b80f2a9c2ba933.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/363a1d552aac5aabc46d7.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/b60d2facc538ad82ad22d.jpg")
 NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/d25f2895cb100c5c1c6f4.jpg")
@@ -51,7 +51,7 @@ MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001578396805))
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL',  -1001578396805))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', '')
-HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/mvisland/763')
+HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/MhubLinks46/40')
 
 # Log Channels
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001859923275))
