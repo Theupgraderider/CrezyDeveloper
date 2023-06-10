@@ -13,9 +13,9 @@ def is_enabled(value, default):
 # Bot information
 PORT = environ.get("PORT", "8080")
 SESSION = environ.get('SESSION', 'Movieprovider')
-API_ID = int(environ.get('API_ID', '16217735'))
-API_HASH = environ.get('API_HASH', '445a16e1f1554cc189673c6be5f5a72f')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6078678678:AAEO9PTkYcYaw4u0fPsr8IdD2DlZ-l1HWy8")
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -27,9 +27,9 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/b60d2facc538ad82ad
 NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/d25f2895cb100c5c1c6f4.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5570163408 5494151843 5838674798').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', ' -1001675532390').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5570163408 5494151843 5838674798').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('')
 auth_grp = environ.get('')
@@ -37,14 +37,14 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://RAJBHAR:RAJBHAR@cluster0.pro6d6k.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "crezyboter")
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "crezyboters")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Channel Button Links
 GRP_LNK = environ.get('GRP_LNK', 'https://telegram.me/mvisland')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Movies_island8')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/RajbharMvSupport')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'crezyDeveloperSupport')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
@@ -61,7 +61,7 @@ RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001930913574))
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '<b>@rajbharmv_bot {file_name}\n\n\n{file_size} </b>')
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '<b>@movieshub62 {file_name}\n\n\n{file_size} </b>')
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>{mention}'s Qᴜᴇʀʏ ☞ <code>{query}</code>\n\n<b>🏷 Tɪᴛʟᴇ</b> : <a href={url}>{title}</a>\n\n🌟 Rᴀᴛɪɴɢ : <a href={url}/ratings>{rating}</a> / 10\n💀 Rᴇʟᴇᴀsᴇ :  <b>{release_date}</b> <b>{countries}</b>\n\n🎭 Gᴇɴʀᴇs : <b>#{genres}</b></b>\n\n<b>🔅 Pᴏᴡᴇʀᴇᴅ Bʏ : {message.chat.title}</b>")
 CYNITE_IMDB_TEMPLATE = environ.get("CYNITE_IMDB_TEMPLATE", "<b><b>🏷 Tɪᴛʟᴇ</b> : <a href={url}>{title}</a>\n\n🌟 Rᴀᴛɪɴɢ : <a href={url}/ratings>{rating}</a> / 10\n💀 Rᴇʟᴇᴀsᴇ :  <b>{release_date}</b> <b>{countries}</b>\n\n🎭 Gᴇɴʀᴇs : <b>{genres}</b></b>\n\n<b>📖 Sᴛᴏʀʏ Lɪɴᴇ :</b> <code>{plot}</code>")
@@ -85,8 +85,8 @@ SPL_DELETE_TIME = int(environ.get('SPL_DELETE_TIME', 5))
 
 # URL SHORTNER
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'mplaylink.com')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '90e231fc75d241f181ec8773a01eebac485ad833')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', '')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
