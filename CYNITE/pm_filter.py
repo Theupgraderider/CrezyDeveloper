@@ -515,14 +515,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('ᗩᗪᗪ ᗰ𝐄 𝐓𝐎 𝐘𝐎ᑌᖇ 𝐆ᖇ𝐎ᑌᑭ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                  ],[
-                    InlineKeyboardButton('♻️ĦɆŁꝐ♻️', callback_data='help'),
-                    InlineKeyboardButton('♻️ȺɃꝊɄȾ♻️', callback_data='about'),
-                  ],[
-                    InlineKeyboardButton('♻️ᒍOIᑎ Oᑌᖇ ᑕᕼᗩᑎᑎEᒪ♻️', url="https://t.me/movies_island8")
-                  ],[InlineKeyboardButton('♻️ᒍOIᑎ Oᑌᖇ GᖇOᑌᑭ♻️', url="https://t.me/searchmoviesname")
-        ]]
+                    InlineKeyboardButton('🍟 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs 🍟', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                ],[
+                    InlineKeyboardButton('🌼 ᴜᴘᴅᴀᴛᴇs 🌼', url=f'https://t.me/Mhubnetwork'),
+                    InlineKeyboardButton('♛ ʙᴏᴛ ᴏᴡɴᴇʀ ♛', url=f'https://t.me/Ashish_xlr8'),
+                ],[
+                    InlineKeyboardButton('🍄 ʜᴇʟᴘ 🍄', callback_data='help'),
+                    InlineKeyboardButton('🔰 ᴀʙᴏᴜᴛ 🔰', callback_data='about'),
+              ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -556,7 +556,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('♻️𝚁𝙴𝙿𝙾𝚁𝚃 𝙱𝚄𝙶𝚂 & 𝙵𝙴𝙴𝙳𝙱𝙰𝙲𝙺♻️', url=GRP_LNK)
         ],[
-            InlineKeyboardButton('♻️ᗷᗩᑕKᑌᑭ ᑕᕼᗩᑎᑎEᒪ♻️', url="https://t.me/movies_island8")
+            InlineKeyboardButton('♻️ᗷᗩᑕKᑌᑭ ᑕᕼᗩᑎᑎEᒪ♻️', url="https://t.me/Mhubnetwork")
         ],[
             InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close_data')
@@ -719,10 +719,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "cynite_cnl":
             cnlbtn = [[
-                      InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/movies_island8')
+                      InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/Mhubnetwork')
                      ], [
-                      InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/rajbharmvsupport'),
-                      InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/movies_island8')
+                      InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/movieshub62'),
+                      InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/movieshub62')
                      ], [
                       InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
                      ]]
@@ -1182,7 +1182,7 @@ async def advantage_spell_chok(msg):
         ),
         InlineKeyboardButton(
             text="ʀᴇᴘᴏʀᴛ ʜᴇʀᴇ",
-            url="https://www.telegram.dog/TG_TR_support_bot"
+            url="https://www.telegram.dog/rbofficiallbot"
         )
     ],[
         InlineKeyboardButton(
